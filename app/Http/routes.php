@@ -14,8 +14,6 @@ Route::resource('/To_Do','ToDoController');
 
 Route::get('To_Do/destroy/{id}','ToDoController@destroy');
 Route::get('/', 'ToDoController@index');
-Route::get('/create', 'ToDoController@create');
-Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
